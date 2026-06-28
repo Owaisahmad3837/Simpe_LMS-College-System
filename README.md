@@ -1,49 +1,39 @@
 
 # Simple College LMS System 🎓
 
-A simple College Learning Management System (LMS) built with Python that helps manage college users and academic activities through different roles.
+A simple Learning Management System (LMS) built with Python Flask that manages college users through different roles.
 
-The system provides separate access levels for:
-
-- Principal
-- Teacher
-- Student
+This project demonstrates a basic college management workflow where a Principal can manage users, including adding, updating, and deleting student and teacher records.
 
 ## Project Overview
 
-This project is designed to manage basic college operations with role-based access control.
+The system has multiple user levels:
 
-The system allows the Principal to manage users, while teachers and students have their own functionalities.
-
-## User Roles & Features
-
-### 👨‍💼 Principal
-
-- Secure login
+### Principal Level
+- Login to admin panel
 - Add new users
 - Update user information
 - Delete users
 - Manage college users
 
-### 👨‍🏫 Teacher
+### Teacher Level
+- Teacher account management
+- Access based on assigned role
 
-- Teacher account access
-- Manage teacher-related activities
-- View assigned information
-
-### 👨‍🎓 Student
-
-- Student account access
-- View student-related information
+### Student Level
+- Student account management
+- Access based on assigned role
 
 ## Features
 
-✅ Role-based login system  
-✅ User management  
-✅ Add / Update / Delete users  
+✅ Role-based user management  
+✅ Principal admin dashboard  
+✅ Add users  
+✅ Update users  
+✅ Delete users  
+✅ User authentication system  
 ✅ Database integration  
 ✅ File upload support  
-✅ Simple college management workflow  
 
 ## Tech Stack
 
@@ -62,32 +52,15 @@ Simple-College-System/
 
 │
 ├── app.py              # Main Flask application
-├── config.py           # Configuration settings
+├── config.py           # Application configuration
 ├── database.py         # Database connection
 ├── models.py           # Database models
 │
 ├── templates/          # HTML pages
 ├── static/uploads/     # Uploaded files
-├── utils/              # Helper functions
+├── utils/              # Utility functions
 │
 └── README.md
-
-```
-
-## System Workflow
-
-```
-
-User Login
-|
-↓
-Check Role
-|
-┌─────────────┐
-|             |
-Principal   Teacher/Student
-|
-Manage Users
 
 ```
 
@@ -116,7 +89,7 @@ Go to project folder:
 cd Simpe-College-System
 ```
 
-Install requirements:
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -134,7 +107,13 @@ Open browser:
 http://127.0.0.1:5000
 ```
 
+## Future Improvements
 
+* Add student attendance system
+* Add marks/grades management
+* Add teacher dashboard
+* Add email notifications
+* Improve authentication security
 
 ## Author
 
